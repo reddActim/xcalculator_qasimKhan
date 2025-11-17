@@ -4,13 +4,13 @@ const buttonLabels = [
   "7", "8", "9",  "+",
   "4", "5", "6",  "-",
   "1", "2", "3", "*",
-  "c", "0", "=", "/"
+  "C", "0", "=", "/"
 ];
 function App() {
   const [expression, setExpression] = useState('');
   const [result, setResult] = useState();
   const handleButtonClick = (value) =>{
-    if(value === "c"){
+    if(value === "C"){
       setExpression("");
       setResult(null);
       return};
