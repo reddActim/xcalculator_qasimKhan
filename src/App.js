@@ -34,7 +34,7 @@ function App() {
     <>
       <div className='container'>
         <h1 className='main-heading'>React Calculator</h1>
-        <input value={expression}/>
+        <input type="text" value={expression}/>
         {result && <div>{result}</div>}
         <div className='buttons'>
         {buttonLabels.map((label, index)=> (<button type="button" key={index} onClick={() => handleButtonClick(label)}>{label}</button>))}
