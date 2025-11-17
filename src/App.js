@@ -37,7 +37,7 @@ function App() {
         <input value={expression}/>
         {result && <div>{result}</div>}
         <div className='buttons'>
-        {buttonLabels.map((label, index)=> (<button key={index} onClick={() => handleButtonClick(label)}>{label}</button>))}
+        {buttonLabels.map((label, index)=> (<button type="button" key={index} onClick={() => handleButtonClick(label)}>{label}</button>))}
         </div>
       </div>
     </>
